@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G-social</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+      <!--iconos -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+</head>
+<body>
+
+     <header class="site-header">
+          <div class="container contenido-header">
+              <div class="barra" style="margin: 0 auto;">
+                   <a href="index.html">
+                      <img src="img/logo.png" alt="Logo">
+                   </a>
+
+              </div> <!--barra-->
+              
+           </div> <!-- Container-->
+      </header>
+
+     <h1 class="fw-300 centrar-texto">Formulario</h1>
+
+<div class="grid centrar-columnas"> 
+
+  <div class="col-12">
+
+    <img src="img/forms/form1-img.jpg" alt="Imagen-form">
+
+  </div>
+ <div class="col-10 inner-form">
+            <h2 class="fw-300 centrar-texto">Llena el formulario de voluntario
+            </h2>
+
+            <form action="enviar1.php" method="Post">
+              <fieldset class="fieldset-forms">
+                <legend>Voluntario</legend>
+                <label for="nombreCompleto">Nombre completo</label>
+                <input type="text" name="nombreCompleto" placeholder="Ej: María Alejandro Pereira Ramos" required>
+
+                <label for="Cedula">Cédula de identidad</label>
+                <input type="text" name="Cedula" placeholder="Ej: V- 7.241.653" required>
+
+                  <label for="fnacimiento">Fecha de nacimiento</label required>
+                <input type="date" name="fnacimiento">
+
+                <label for="typesex">Sexo:</label>
+                <select id="opciones" name="typesex">
+                   <option disabled selected>---Seleccione---</option>
+                   <option>Hombre</option>
+                   <option>Mujer</option>
+                </select>
+
+
+                <label for="numeroDtelefono">Teléfono</label>
+                <input type="tel" name="numeroDtelefono" placeholder="Ej: +58 414 456 4786" required>
+
+
+                <label for="direccionLocal">Direcci&oacute;n</label>
+                <input type="text" name="direccionLocal"  placeholder="Calle y número" required>
+
+                <input type="text" name="direccionLocal2"  placeholder="Piso, puerta, edificio, etc.">
+
+                <label for="ciudadForm">Ciudad</label>
+                <input type="text" name="ciudadForm"  placeholder="Ej: Valencia">
+
+                <label for="estadoForm">Estado</label>
+                <input type="text" name="estadoForm"  placeholder="Ej: Carabobo">
+
+                <label for="igform">Link de perfil de Instagram,Twitter o Facebook</label>
+                <input type="text" name="igform" placeholder="Ej: @mariapereira2">
+
+                 <label for="emailForm">Email</label>
+                <input type="email" name="emailForm" placeholder="Ej: mariapereira@gmail.com" required>
+              
+                <label for="op_interes">Áreas de interés (Al menos 3)</label>
+                <select name="op_interes" style="margin-left: 5px; float:left;">
+                   <option disabled selected>---Seleccione---</option>
+                   <option>Adultos Mayores</option>
+                   <option>Niños</option>
+                   <option>Jóvenes</option>
+                   <option>Adultos</option>
+                   <option>Animales</option>
+                   <option>Arte y cultura</option>  
+                </select>
+
+                <select  name="op_interes2" style="margin-left: 5px; float:left; margin-right: 5px;">
+                  <option disabled selected>---Seleccione---</option>
+                  <option>Comunidad</option>
+                  <option>Crecimiento personal</option>
+                  <option>Deporte</option> 
+                  <option>Derechos humanos/justicia</option>
+                  <option>Discapacidad</option>
+                  <option>Educaci&oacute;n</option>  
+               </select>
+
+               <select  name="op_interes3" style="margin-left: 5px;">
+                <option disabled selected>---Seleccione---</option>
+                <option>Empleabilidad</option>
+                <option>Emprendimiento</option>
+                <option>Salud</option>
+                <option>Mujer</option>
+                <option>Tecnolog&iacute;a</option>
+                <option>Vivienda</option>
+                <option>Medio ambiente</option>  
+             </select>
+
+             <label for="otraInteres">Otra área de interés</label>
+             <input type="text" name="otraInteres" placeholder="Ej: política">
+
+               
+
+                <label for="habilidades1">Habilidades (al menos 3)</label>
+                <select name="habilidades1" style="float: left; ">
+                   <option disabled selected>---Seleccione---</option>
+                   <option>Analizar y resolver problemas</option>
+                   <option>Iniciativa</option>
+                   <option>Adaptación a situaciones difíciles</option>
+                   <option>Creatividad</option> 
+                </select>
+                <select  name="habilidades2" style="float: left; margin-left: 5px; margin-right: 5px;">
+                  <option disabled selected>---Seleccione---</option>
+                  <option>Liderar grupos de trabajo</option>
+                  <option>Organización y planificación</option> 
+                  <option>Trabajo en equipo</option>
+                  <option>Organización y planificación</option>   
+               </select>
+               <select name="habilidades3" >
+                <option disabled selected>---Seleccione---</option>
+                <option>Buena comunicación con otros compañeros de trabajo</option>
+                <option>Capacidad para relacionarte</option>
+                <option>Empatía</option>
+                <option>Idiomas</option>   
+             </select>
+             <label for="Ohabilidad">Otra habilidad</label>
+             <input type="text" name="Ohabilidad">
+
+               <label for="entrenamientoRequerido">¿Ha tenido experiencia como voluntario?</label>
+                <div class="inner-form-campo">
+                    <div>Si<input type="radio" name="entrenamientoRequerido" value="si"></div> <div>No <input type="radio" name="entrenamientoRequerido" value="no"></div> 
+                </div>
+
+                <label for="Pvoluntario">¿Por qué desea ser voluntario?</label>
+                <select name="Pvoluntario">
+                  <option disabled selected>---Seleccione---</option>
+                  <option>Ayudar a quien lo necesita</option>
+                  <option>Dejar huella</option>
+                  <option>Descubrir competencias</option>
+                  <option>Conocer gente</option>
+                  <option>Contribuir con tu entorno</option>
+                  <option>Sentir que eres útil</option>
+                   
+               </select>
+
+                <label for="Dvoluntario">Disponibilidad de tiempo para trabajo voluntario</label>
+                <p>Dias a la semana</p>
+                <input type="text" name="Dvoluntario" placeholder="Ej: De lunes a viernes" required>
+
+                <p>Horas</p>
+                <input type="text" name="HorasVoluntario" placeholder="Ej: 6 horas">
+
+               <p>Fines de semana</p>
+               <input type="text" name="FinesDsemana" placeholder="Ej: Disponible los domingos">
+
+               <p>Horas</p>
+                <input type="text" name="Horas" placeholder="Ej: 2 horas">
+
+                <input type="submit" class="boton boton-amarillo f-btns" value="Enviar">
+                <a class="boton boton-amarillo f-btns" href="form.html">Volver</a>
+              </fieldset>
+
+            </form>
+            </div><!--Fin col-10-->
+</div><!--grid-->
+
+</main>
+    
+
+<!-- footer -->
+<footer class="site-footer seccion">
+  <div class="container contenedor-footer clearfix">
+      
+      <p class="copyright">G-SOCIAL &#169; 2020 Todos los derechos reservados. </p>
+      <a href="mailto:carlos.gasia@outlook.com"><p class="author">A C.A.G.L's design</p></a>
+  </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

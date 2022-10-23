@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G-social</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+      <!--iconos -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+</head>
+<body>
+
+     <header class="site-header">
+          <div class="container contenido-header">
+              <div class="barra" style="margin: 0 auto;">
+                   <a href="index.html">
+                      <img src="img/logo.png" alt="Logo">
+                   </a>
+
+              </div> <!--barra-->
+              
+           </div> <!-- Container-->
+      </header>
+
+     <h1 class="fw-300 centrar-texto">Formulario</h1>
+
+<div class="grid centrar-columnas"> 
+
+  <div class="col-12">
+
+   <img src="img/forms/form2-img.jpg" alt="Imagen Anuncio">
+
+  </div>
+ <div class="col-10 inner-form">
+            <h2 class="fw-300 centrar-texto">Llena el formulario de organizaciones
+            </h2>
+
+            <form action="enviar2.php">
+              <fieldset class="fieldset-forms">
+                <legend>Organizaci&oacute;n</legend>
+                <label for="name">Nombre de la organización</label>
+                <input type="text" name="nombreCompleto" id="name" placeholder="Ej: Tu organización">
+
+                <label>Rif</label>
+                <input type="tel" name="rif" placeholder="Ej: J-00006372-9">
+
+                <label for="name">Tipo de organización</label>
+                <select id="opciones" name="tipoOrganizacion">
+                   <option disabled selected>---Seleccione---</option>
+                   <option>Asociación civil</option>
+                   <option>Fundación privada</option>
+                   <option>Organización comunitaria</option>
+                   <option>Empresa</option>
+                </select>
+
+                  <label>Misión de la organización</label>
+                <textarea name="mision" cols="30" rows="10"></textarea>
+
+                  <label>Direcci&oacute;n</label>
+                <input type="text" name="direccion1" id="name" placeholder="Calle y número">
+
+                <input type="text" name="direccionLocal2" id="name" placeholder="Piso, puerta, edificio, etc.">
+
+                <label>Ciudad</label>
+                <input type="text" name="ciudadForm" id="name" placeholder="Ej: Valencia">
+
+                <label>Estado</label>
+                <input type="text" name="estadoForm" id="name" placeholder="Ej: Carabobo">
+
+                <label>Email</label>
+                <input type="email" name="emailForm" placeholder="Ej: mariapereira@gmail.com">
+
+                <label>Teléfono</label>
+                <input type="tel" name="telefono" placeholder="Ej: +58 414 456 4786">
+              
+                <label>Link de perfil de Instagram,Twitter o Facebook</label>
+                <input type="url" name="igform" placeholder="Ej: @mariapereira2">
+              
+                <label>Área de impacto</label>
+                <select id="opciones" name="areaDImpacto" style="float: left; margin-right: 5px;">
+                  <option disabled selected>---Seleccione---</option>
+                  <option>Salud</option>
+                  <option>Educación</option>
+                  <option>Ambiente</option>
+                  <option>Cultura</option>
+                  <option>Economía</option>
+                  <option>Familia</option>
+               </select>
+               <input style="width: 120.1px;" type="text" name="oAreainteres" id="name" placeholder="Ingrese otra área">
+
+                <label>Programas sociales activos que requieran trabajo voluntario</label>
+                <input type="text" name="name" id="ProgramaRquerido">
+
+                <label>Nombre de persona para contacto</label>
+                <input type="text" name="pContacto" id="name" placeholder="Ej: María Alejandro Pereira Ramos">
+                
+                <label>N&uacute;mero de teléfono de persona para contacto</label>
+                <input type="tel" name="Ncontacto" id="name" placeholder="Ej: +58 414 456 4786">
+
+                <input type="submit" class="boton boton-amarillo f-btns" value="Enviar">
+                <a class="boton boton-amarillo f-btns" href="form.html">Volver</a>
+
+
+              </fieldset>
+
+            </form>
+            </div><!--Fin col-10-->
+</div><!--grid-->
+
+</main>
+    
+
+
+
+
+
+<!-- footer -->
+<footer class="site-footer seccion">
+  <div class="container contenedor-footer clearfix">
+      
+      <p class="copyright">G-SOCIAL &#169; 2020 Todos los derechos reservados. </p>
+      <a href="mailto:carlos.gasia@outlook.com"><p class="author">A C.A.G.L's design</p></a>
+  </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
